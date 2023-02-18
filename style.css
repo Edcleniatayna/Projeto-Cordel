@@ -1,0 +1,108 @@
+@charset "UTF-8";
+
+@font-face{
+    font-family: 'Passiono-One';
+    src: url(fontes/PassionOne-Regular.ttf) format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face{
+    font-family: 'Sriracha';
+    src: url(fontes/Sriracha-Regular.ttf) format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+:root{
+    --fonte1: Verdana, Geneva, Tahoma, sans-serif;
+    --fonte2: 'Passion One',cursiva;
+    --fonte3:  'Sriracha',cursiva;
+}
+
+*{
+    padding: 0px;
+    margin: 0px;
+    font-size: 1em;
+}
+
+html,body{
+    min-height: 100vh;
+    background-color:darkgray;
+    font-family: var(--fonte1);
+}
+
+header{
+    background-color: black;
+    color: white;
+    text-align: center;
+    
+}
+
+header > h1{
+    padding-top: 50px;
+    font-variant: small-caps;
+    font-family:var(--fonte2);
+    font-size: 10vw;
+}
+
+header > p{
+    padding-bottom: 50px;
+    font-family:var(--fonte2);
+}
+
+header a, footer a{
+    color: white;
+    text-decoration: none;
+    font-weight: bolder;
+}
+
+header a:hover, footer a:hover{
+    text-decoration: underline;
+}
+
+section{
+    padding: 100px 100px;
+    line-height: 2em;
+    padding-left: 30px;
+    font-family: var(--fonte3);
+    font-size: 3.5vw;
+}
+
+section.normal{
+    background-color: white;
+    color:black;
+}
+
+section.imagem{
+    background-color: rgb(51, 51, 51);
+    color: white;
+}
+
+section.imagem > p{
+    display:inline-block;
+    padding: 5px;
+    background-color: rgba(0, 0, 0, 0.267);
+    text-shadow: 1px 1px 0px black;
+}
+
+#img1{
+    background-position:right center;
+    background-attachment: fixed;
+    background-image: url(imagens/background001.jpg);
+    background-size: cover;
+}
+
+#img2{
+    background-attachment: fixed;
+    background-position: right center;
+    background-image: url(imagens/background002.jpg);
+    background-size: cover;
+}
+
+footer{
+    background-color: black;
+    color: wheat;
+    text-align: center;
+    padding: 10px;
+}
